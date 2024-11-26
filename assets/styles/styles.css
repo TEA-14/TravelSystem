@@ -1,0 +1,227 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background: url('../images/bg.jpg') no-repeat center center fixed; /* Replace with your background image */
+   background-size: cover;
+   color: #fff;
+}
+
+.header-class {
+   background-color: black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+.header-class h1 {
+   margin: 0;
+   font-size: 2em;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.main-button a{
+   position: absolute;
+   bottom: 40px;
+   right: 80px;
+   padding: 20px;
+   background-color: #0073ff;
+   border: none;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   text-decoration: none;
+ 
+}
+
+.main-button .login{
+   position: absolute;
+   bottom: 40px;
+   right: 200px;
+   padding: 20px;
+   background-color: #000000;
+   border: none;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+
+.main-image {
+   filter: hue-rotate(180deg);
+   margin: 40px;
+   border: 1px solid #ccc;
+   width: 600px;
+   background-color: #fff;
+   mix-blend-mode: multiply;
+ 
+}
+
+.main-image p {
+   padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+
+
+.container {
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(10px);
+   padding: 40px;
+   border-radius: 10px;
+   width: 100%;
+   max-width: 400px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.form label {
+   display: block;
+   margin: 10px 0 5px;
+}
+
+.form input {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: none;
+   border-radius: 10px;
+}
+
+.form button {
+   width: 100%;
+   padding: 10px;
+   background-color: #0073ff;
+   border: none;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.form button:hover {
+   background-color: #dfa105;
+}
+
+.form p {
+   text-align: center;
+   margin-top: 10px;
+}
+
+.form p a {
+   color: #3498db;
+   text-decoration: none;
+}
+
+.form p a:hover {
+   text-decoration: underline;
+}
+
+.dashboard-main {
+   flex: 1;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-class h2 {
+   color: #0073ff;
+   
+}
+
+nav ul {
+   list-style-type: none;
+}
+nav ul li {
+   margin: 0 15px;
+}
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+nav ul li a:hover {
+   text-decoration: underline;
+}
+
+.box-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 20px;
+}
+
+.box-container div {
+   background-color: #f1f1f1;
+   margin: 20px;
+   padding: 5px; 
+   box-sizing: border-box;
+   flex: 1 1 250px; /* Flex property to make divs responsive */
+   max-width: 300px; /* Max width to control the size */
+   text-align: center; /* Center align text and image */
+   color: black;
+}
+
+.box-container img {
+   width: 100%; /* Make images responsive to div width */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Text styling inside the div */
+.box-container h3 {
+   margin-top: 10px; /* Add some space above the title */
+   font-size: 1.0em;
+}
+
+.box-container p {
+   margin-top: 5px; /* Add some space above the paragraph */
+   font-size: 1.2em;
+}
+
+footer {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   text-align: center;
+}
+
+footer p {
+   margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+   .container {
+       padding: 20px;
+   }
+
+   .form h1 {
+       font-size: 1.5em;
+   }
+
+   .form button {
+       font-size: 14px;
+   }
+}
